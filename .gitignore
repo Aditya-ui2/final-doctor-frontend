@@ -1,0 +1,34 @@
+# --- React / Frontend (Node) ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Python / Backend (FastAPI) ---
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.so
+.env
+.ipynb_checkpoints/
+
+# --- Database (Ye upload nahi hone chahiye) ---
+*.db
+*.sqlite3
+*.sqlite
+
+# --- IDE / System Files ---
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
