@@ -6,7 +6,7 @@ import {
   Filter, ChevronRight, Phone, Mail, Award, Users, ClipboardList
 } from 'lucide-react';
 
-const API_BASE_URL = "https://health-backend.onrender.com";
+const API_BASE_URL = "https://doctor-prescriptionn.onrender.com";
 
 function App() {
   const tokenExists = !!localStorage.getItem('token');
