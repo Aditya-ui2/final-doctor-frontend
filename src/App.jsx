@@ -1040,7 +1040,7 @@ function App() {
                     </div>
                     <div className="text-right">
                       <p className="text-sm font-medium text-gray-800">{apt.date}</p>
-                      {apt.status === 'completed' ? (
+                      {(apt.status === 'completed' || apt.status === 'complete') ? (
                         <button onClick={() => { setReviewDoctorId(apt.doctor_id); setCurrentScreen('rate-doctor'); }} className="mt-1 inline-flex items-center gap-1 bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold hover:bg-yellow-200 transition-colors shadow-sm">⭐ Rate</button>
                       ) : (
                         <span className={`inline-block px-2 py-1 text-xs font-medium rounded-full ${apt.status === 'confirmed' ? 'bg-green-100 text-green-700' : (apt.status === 'cancelled' ? 'bg-red-100 text-red-600' : (apt.status === 'upcoming' ? 'bg-teal-100 text-teal-700' : 'bg-gray-200 text-gray-700'))}`}>{apt.status}</span>
