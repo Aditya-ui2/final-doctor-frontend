@@ -1260,7 +1260,9 @@ function App() {
                   <div className="flex justify-between"><span className="text-gray-600">Specialty:</span><span className="font-semibold text-gray-800">{selectedDoctor.specialty}</span></div>
                   {selectedDate && (<div className="flex justify-between"><span className="text-gray-600">Date:</span><span className="font-semibold text-gray-800">{selectedDate}</span></div>)}
                   {selectedTime && (<div className="flex justify-between"><span className="text-gray-600">Time:</span><span className="font-semibold text-gray-800">{selectedTime}</span></div>)}
-                  <div className="flex justify-between pt-3 border-t border-gray-200 mt-3"><span className="text-gray-600">Consultation Fee:</span><span className="font-bold text-teal-600 text-lg">$50</span></div>
+                  <div className="flex justify-between pt-3 border-t border-gray-200 mt-3"><span className="text-gray-600">Consultation Fee:</span><span className="font-bold text-teal-600 text-lg">
+        ₹{selectedDoctor.consultation_fee || 500}
+    </span></div>
                 </div>
               </div>
               <button onClick={handleBooking} disabled={!selectedDate || !selectedTime} className="w-full bg-gradient-to-r from-teal-500 to-cyan-600 text-white py-4 rounded-xl font-semibold hover:from-teal-600 hover:to-cyan-700 transform hover:scale-[1.02] transition-all shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">Confirm Booking</button>
